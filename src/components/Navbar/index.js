@@ -1,4 +1,5 @@
 import React from 'react';
+import './navbar.css'
 import {
   Collapse,
   Navbar,
@@ -29,7 +30,7 @@ export default class NavbarHeader extends React.Component {
   render() {
     return (
       <div>
-        <Navbar color="primary" light expand="md">
+        <Navbar className="navbar" color="primary" light expand="md">
           <NavbarBrand className="text-white" href="/">My Library</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
