@@ -1,9 +1,11 @@
 import React from 'react'
 import './mainContent.css'
+import { connect } from 'react-redux'
+import * as actions from '../../actions'
 
 import BookCard from './partials/BookCard'
 
-export default class MainContentBlock extends React.Component {
+class MainContentBlock extends React.Component {
     render() {
         return (
             <div className="mainContent">
@@ -14,3 +16,5 @@ export default class MainContentBlock extends React.Component {
         )
     }
 }
+
+export default connect(null, actions)(MainContentBlock)
