@@ -5,6 +5,7 @@ import { Card, CardImg, CardText, CardBody,
 import './bookCard.css'
 
 const BookCard = (props) => {
+  console.log('props: ', props)
   return (
     <div className="book-card">
       <Card>
